@@ -3,71 +3,237 @@ body {
   line-height: 1.5;
   color: #22343d;
   background-color: #fff;
-  width: 1400;
-  padding: 8px;
 }
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+  line-height: 1,62;
+}
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 img {
   display: block;
-}
-.header,
-.logo,
-.menu-header,
-.menu-sign,
-.nav {
-  display: flex;
-}
-.header {
   max-width: 100%;
-  height: 80px;
-  justify-content: space-evenly;
-  align-items: center;
 }
-
+/* --------BODY---------- */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* -------header--------- */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 72px;
+}
 .logo {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 30px;
+  line-height: 0.93;
   color: #173a56;
-  gap: 16px;
+  min-width: 178px;
+  height: 36px;
+  padding: 26px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  
+  gap: 236px;
 }
-
-.nav-menu {
-  font-size: 16px;
-  line-height: 175%;
-  color: #22343d;
-}
-.menu-header {
-  margin: 0;
+.header-list {
+  display: flex;
   gap: 30px;
 }
-.menu1 {
+.header-list-item {
+  display: block;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
+  padding: 26px 0;
+}
+.header-list li:first-child {
   font-weight: 600;
 }
-
-.sign-in,
-.sign-up {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  width: 105px;
-  height: 42px;
+.menu-sign {
+  display: flex;
+  gap: 20px;
+}
+.menu-sign li {
+  display: block;
   border-radius: 4px;
+  min-width: 112px;
+  height: 42px;
+  text-align: center;
+  padding: 10px 25px;
+  cursor: pointer;
 }
 .sign-in {
-  color: #173a56;
   border: 1px solid #bcd0e5;
+  padding: 26px 0;
 }
 .sign-up {
+  background-color: #02897a;
+  color: #fff;
+}
+/* ----section 1 hero----- */
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero {
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+.hero h1 {
+  display: block;
+  font-size: 40px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.hero-text {
+  display: block;
+  font-size: 18px;
+  line-height: 1.56;
+  margin-bottom: 48px;
+}
+.hero-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.hero li {
+  display: block;
+  cursor: pointer;
+}
+.hero li:first-child {
+  font-weight: 700;
   color: #fff;
   background-color: #02897a;
+  border-radius: 4px;
+  min-width: 178px;
+  height: 53px;
+  padding: 15px 42px;
+}
+.hero li:last-child {
+  font-weight: 600;
+  color: #02897a;
+  text-decoration: underline;
+}
+.office-offer .container {
+  padding-bottom: 50px;
+}
+
+.hero-text-container {
+  max-width: 465px;
+}
+.product-built h2 {
+  margin: 0 auto;
+  max-width: 535px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.product-h3 {
+  max-width: 540px;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
+}
+.product-list-item p {
+  line-height: 1.62;
+}
+.product-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 76px;
+}
+.product-list-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.product-link {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  background: #02897a;
+  text-transform: uppercase;
+  width: 175px;
+  height: 54px;
+  padding: 15px 32px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ------number 3-------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  overflow: hidden;
+}
+.office-h4,
+.p-bond {
+  font-weight: 600;
+  line-height: 1, 62;
+}
+.office-h3 {
+  font-size: 32px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+.office-h4 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+.office-offer-list {
+  display: flex;
+  row-gap: 100px;
+  flex-wrap: wrap;
+}
+.office-manegment-list {
+  display: block;
+  padding: 41px 0;
+}
+.office-offer-list-item {
+  display: flex;
+  gap: 84px;
+}
+.office-second-list{
+  padding-left: 30px;
+  margin-top: 30px;
+}
+.office-second-li{
+  margin-bottom: 25px;
+}.office-second-li:last-child{
+  margin-bottom: 0;
 }
