@@ -20,7 +20,7 @@ h6 {
 }
 p {
   margin: 0;
-  line-height: 1,62;
+  line-height: 1.62;
 }
 a {
   text-decoration: none;
@@ -204,7 +204,6 @@ img {
 .office-h4,
 .p-bond {
   font-weight: 600;
-  line-height: 1, 62;
 }
 .office-h3 {
   font-size: 32px;
