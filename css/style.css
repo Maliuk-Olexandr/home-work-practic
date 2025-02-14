@@ -35,9 +35,7 @@ img {
   max-width: 100%;
 }
 .container {
-  background-color: #d8c4c4;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
   max-width: 1140px;
   padding: 0 15px;
 }
@@ -56,11 +54,12 @@ img {
   display: flex;
   font-size: 30px;
   font-weight: 700;
+  gap: 16px;
   height: 36px;
   justify-content: space-between;
   line-height: 0.93;
   margin-right: 237px;
-  min-width: 178px;
+  max-width: 178px;
 }
 .navbar {
   align-items: center;
@@ -73,7 +72,7 @@ img {
 .header-list-item {
   color: #22343d;
   display: block;
-  font-size: 16px;
+
   line-height: 1.75;
   padding: 26px 0;
 }
@@ -90,6 +89,7 @@ img {
   cursor: pointer;
   display: block;
   font-weight: 600;
+  overflow: hidden;
   padding: 10px 24px;
   text-align: center;
 }
@@ -136,6 +136,7 @@ img {
   color: #fff;
   font-weight: 700;
   min-width: 178px;
+  overflow: hidden;
   padding: 15px 42px;
 }
 .hero li:last-child {
@@ -178,10 +179,10 @@ img {
   border-radius: 4px;
   color: #fff;
   display: block;
-  font-size: 16px;
+
   font-weight: 700;
   margin: 0 auto;
-  min-width: 175px;
+  max-width: 175px;
   overflow: hidden;
   padding: 15px 32px;
   text-transform: uppercase;
@@ -376,6 +377,7 @@ img {
   flex-basis: calc((100% - 144px) / 3);
   font-family: "Montserrat", sans-serif;
   min-width: 322px;
+  overflow: hidden;
   padding: 30px 0;
 }
 .price-list-item span {
@@ -414,4 +416,145 @@ img {
 .price-list > li:last-child .price-btn {
   background-color: #02897a;
   color: #fff;
+}
+/* -----number 7 reviews------ */
+.reviews-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.78;
+  margin: 0 auto 10px;
+  max-width: 286px;
+}
+.reviews-text {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.75;
+  margin: 0 auto 40px;
+  max-width: 537px;
+  text-align: center;
+}
+.reviews-list {
+  display: flex;
+  gap: 64px;
+  justify-content: space-between;
+}
+.reviews-response {
+  color: #737373;
+  letter-spacing: 0.01em;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.reviews-item {
+  display: flex;
+  gap: 14px;
+}
+.reviewer-name {
+  color: #02897a;
+
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+}
+.reviews-list li {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  flex-basis: calc((100% - 64px) / 3);
+  overflow: hidden;
+  padding: 26px;
+}
+.reviews-item img {
+  margin-right: 14px;
+}
+/* ----section 8----- */
+
+.order-offer-info {
+  background: #02897a;
+  border-radius: 32px;
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 968px;
+  overflow: hidden;
+  padding-left: 51px;
+  padding-right: 46px;
+}
+.order-join {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 151%;
+  margin-bottom: 46px;
+  margin-top: 49px;
+}
+.get-this {
+  background-color: #fff;
+  border: 0;
+  border-radius: 8px;
+  color: #02897a;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 34px;
+}
+/* -----footer menu----- */
+.social {
+  display: flex;
+  gap: 20px;
+  max-width: 178px;
+}
+.footer-list {
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+}
+.container-footer {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
+}
+.footer-link {
+  line-height: 2.19;
+}
+.footer-menu {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 280px;
+}
+.footer-item {
+  max-width: 15%;
+  /* flex-basis: calc((100% - 90px) * 0.2); */
+}
+.footer-form {
+  max-width: 35%;
+  /* flex-basis: calc((100% - 90px) * 0.4); */
+  min-width: 325px;
+}
+.footer-input {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  display: block;
+  line-height: 175%;
+  margin-bottom: 25px;
+  min-width: 325px;
+  padding: 10px 12px;
+}
+.footer-input::placeholder {
+  color: #02897a;
+  opacity: 1;
+}
+.footer-sign-up {
+  background-color: #02897a;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  padding: 8px 15px;
+  text-align: center;
+}
+.rights {
+  margin: 0 auto;
+  max-width: 394px;
 }
