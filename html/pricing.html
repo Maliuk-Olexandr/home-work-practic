@@ -3,255 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Business promotion - Customers</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="../index.html"
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="../index.html"
           ><img
+            class="logo-text"
             src="../img/logo.svg"
             width="40"
             height="36"
             alt="logo"
           />Product</a
         >
-        <ul>
-          <li><a href="../index.html">Product</a></li>
-          <li><a href="../html/pricing.html">Pricing</a></li>
-          <li><a href="../html/customer.html">Customers</a></li>
-          <li><a href="#resources">Resources</a></li>
+        <ul class="header-list">
+          <li><a class="header-list-item" href="../index.html">Product</a></li>
+          <li>
+            <a class="header-list-item" href="./pricing.html">Pricing</a>
+          </li>
+          <li>
+            <a class="header-list-item" href="./customer.html">Customers</a>
+          </li>
+          <li><a class="header-list-item" href="#resources">Resources</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href=""></a>Sign In</li>
-        <li><a href=""></a>Sign Up</li>
+      <ul class="menu-sign">
+        <li class="sign-in"><a href=""></a>Sign In</li>
+        <li class="sign-up"><a href=""></a>Sign Up</li>
       </ul>
     </header>
-
+    <!-- ----- main----- -->
     <main>
-      <section>
-        <p>PRICING</p>
-        <h2>Let&#10076;s get some real work done here.</h2>
-        <p>
-          Prodict is your perfect solution for working. Get started now for free
-        </p>
-        <ul>
-          <li>
-            <h3>Free</h3>
-            <p>Brief price description</p>
-            <span>0 $ Per / month</span>
-            <ul>
-              <li>Only 2 Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-          <li>
-            <h3>Standard</h3>
-            <p>Brief price description</p>
-            <span>5 $ Per / month</span>
-            <ul>
-              <li>5+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-          <li>
-            <h3>Premium</h3>
-            <p>Brief price description</p>
-            <span>10 $ Per / month</span>
-            <ul>
-              <li>10+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-        </ul>
+      <!-- number 6 -->
+      <section class="price-table">
+        <div class="container">
+          <p class="pricing-title">PRICING</p>
+          <h2>Let&#10076;s get some real work done here.</h2>
+          <p class="price-table-desc">
+            Prodict is your perfect solution for working. Get started now for
+            free
+          </p>
+          <ul class="price-list">
+            <li class="price-list-item">
+              <h3>Free</h3>
+              <p class="price-desc">Brief price description</p>
+              <span>0 $ Per / month</span>
+              <ul class="price-list-ul">
+                <li>Only 2 Operators</li>
+                <li>Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+              <button class="price-btn" type="button">Order Now</button>
+            </li>
+            <li class="price-list-item">
+              <h3>Standard</h3>
+              <p class="price-desc">Brief price description</p>
+              <span>5 $ Per / month</span>
+              <ul class="price-list-ul">
+                <li>5+ Operators</li>
+                <li>Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+              <button class="price-btn" type="button">Order Now</button>
+            </li>
+            <li class="price-list-item">
+              <h3>Premium</h3>
+              <p class="price-desc">Brief price description</p>
+              <span>10 $ Per / month</span>
+              <ul class="price-list-ul">
+                <li>10+ Operators</li>
+                <li>Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+              <button class="price-btn" type="button">Order Now</button>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>ENTERPRISE</h2>
-        <ul>
-          <li>Are you interested in a custom-tailored plan?</li>
-          <li>
+      <section class="enterprise">
+        <div class="container">
+          <h2 class="enterprise-h2">ENTERPRISE</h2>
+          <p class="enterprise-follow">
+            Are you interested in a custom-tailored plan?
+          </p>
+          <p class="enterprise-desc">
             Product is a set of advanced features for really large teams with
             projects.
-          </li>
-          <li><a href="">Get in touch with us</a></li>
-        </ul>
+          </p>
+          <a class="touch-with-us" href="">Get in touch with us</a>
+        </div>
       </section>
-      <section>
-        <h2>Product is being used with great effects alongside:</h2>
-        <img src="../img/amico.png" width="528" height="392" alt="devices" />
-        <ul>
-          <li>
-            <img src="../img/feature2.png" width="50" height="50" alt="icon2" />
-            <h3>Enterpreneur</h3>
-            <p>
-              Product is a great way to help medium and samall enterprise owners
-              achieve their goals
-            </p>
-          </li>
-          <li>
-            <img src="../img/feature3.png" width="50" height="50" alt="icon3" />
-            <h3>Accountants</h3>
-            <p>
-              Whether you are working on contract with clients, or on other key
-              accounting documents, Product is for you
-            </p>
-          </li>
-          <li>
-            <img src="../img/feature1.png" width="50" height="50" alt="icon1" />
-            <h3>Universities</h3>
-            <p>
-              Organize university projects and have documents easily graded
-              online with Product
-            </p>
-          </li>
-        </ul>
+      <section class="product-used">
+        <div class="container">
+          <h2 class="product-used-h2">
+            Product is being used with great effects alongside:
+          </h2>
+          <div class="product-used-info">
+            <img
+              src="../img/amico.png"
+              width="528"
+              height="392"
+              alt="devices"
+            />
+            <ul class="product-used-list">
+              <li class="product-used-item">
+                <h3 class="product-used-h3">Enterpreneur</h3>
+                <p class="product-used-p">
+                  Product is a great way to help medium and samall enterprise
+                  owners achieve their goals
+                </p>
+              </li>
+              <li class="product-used-item">
+                <h3 class="product-used-h3">Accountants</h3>
+                <p class="product-used-p">
+                  Whether you are working on contract with clients, or on other
+                  key accounting documents, Product is for you
+                </p>
+              </li>
+              <li class="product-used-item">
+                <h3 class="product-used-h3">Universities</h3>
+                <p class="product-used-p">
+                  Organize university projects and have documents easily graded
+                  online with Product
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Frequently asked question</h2>
-        <p>Something is not clear? You need help? Check our FAQ section</p>
-        <ul>
-          <li>
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq-h2">Frequently asked question</h2>
+          <p class="faq-p">Something is not clear? You need help? Check our FAQ section</p>
+          <ul>
+            <li>
+              <img
+                src="../img/plus_circle.png"
+                width="24"
+                height="24"
+                alt="close"
+              />
+              <h6 class="faq-h6">What are my payment option?</h6>
+              <p></p>
+            </li>
+            <li>
+              <img
+                src="../img/minus_circle.png"
+                width="24"
+                height="24"
+                alt="open"
+              />
+              <h6 class="faq-h6">How can I invite collaborator to platform?</h6>
+              <p>
+                After creating your account you will have an oppurtunity to
+                create your first project that will be associated withthe
+                collaborators e-mail. An invitation will be sent automatically.
+                Then, invited user will have to confirm his account by e-mail
+                and finish userd onboarding.
+              </p>
+            </li>
+            <li>
+              <img
+                src="../img/plus_circle.png"
+                width="24"
+                height="24"
+                alt="close"
+              />
+              <h6 class="faq-h6">Can I upgrade my plan?</h6>
+              <p></p>
+            </li>
+            <li>
+              <img
+                src="../img/plus_circle.png"
+                width="24"
+                height="24"
+                alt="close"
+              />
+              <h6 class="faq-h6">Can I cancel my plan at anytime?</h6>
+              <p></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- number 8 -->
+      <section class="order-offer">
+        <div class="container">
+          <h2 class="visually-hidden">order offer</h2>
+          <div class="order-offer-info">
+            <ul>
+              <li>
+                <p class="order-join">
+                  Join 100 Compannies who boost their business with Product
+                </p>
+              </li>
+              <li><a class="get-this" href="">Get This</a></li>
+            </ul>
             <img
-              src="../img/plus_circle.png"
-              width="24"
-              height="24"
-              alt="close"
+              src="../img/graphics.png"
+              width="351"
+              height="331"
+              alt="grafics"
             />
-            <h6>What are my payment option?</h6>
-            <p></p>
-          </li>
-          <li>
-            <img
-              src="../img/minus_circle.png"
-              width="24"
-              height="24"
-              alt="open"
-            />
-            <h6>How can I invite collaborator to platform?</h6>
-            <p>
-              After creating your account you will have an oppurtunity to create
-              your first project that will be associated withthe collaborators
-              e-mail. An invitation will be sent automatically. Then, invited
-              user will have to confirm his account by e-mail and finish userd
-              onboarding.
-            </p>
-          </li>
-          <li>
-            <img
-              src="../img/plus_circle.png"
-              width="24"
-              height="24"
-              alt="close"
-            />
-            <h6>Can I upgrade my plan?</h6>
-            <p></p>
-          </li>
-          <li>
-            <img
-              src="../img/plus_circle.png"
-              width="24"
-              height="24"
-              alt="close"
-            />
-            <h6>Can I cancel my plan at anytime?</h6>
-            <p></p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
     </main>
+
     <!-- footer -->
 
     <footer>
-      <section>
-        <h2>order offer</h2>
-        <ul>
-          <li>
-            <p>Join 100 Compannies who boost their business with Product</p>
+      <div class="container-footer">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="logo" href="#"
+              ><img
+                src="../img/logo.svg"
+                width="40"
+                height="36"
+                alt="logo"
+              />Product</a
+            >
+            <ul class="social">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  ><img src="../img/social-inst.svg" alt="social-instagram"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="http://www.facebook.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  ><img src="../img/social-facebook.svg" alt="social-facebook"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="http://x.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  ><img src="../img/social-x.svg" alt="icon social-x"
+                /></a>
+              </li>
+            </ul>
           </li>
-          <li><a href="">Get This</a></li>
+          <li class="footer-item">
+            <nav>
+              <p class="footer-menu" id="resources">Resource</p>
+              <ul>
+                <li><a class="footer-link" class="go" href="">About Us</a></li>
+                <li><a class="footer-link" href="">Blog</a></li>
+                <li><a class="footer-link" href="">Contact</a></li>
+                <li><a class="footer-link" href="">FAQ</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li class="footer-item">
+            <nav>
+              <p class="footer-menu">Legal Stuff</p>
+              <ul>
+                <li><a class="footer-link" href="">Disclaimer</a></li>
+                <li><a class="footer-link" href="">Financing</a></li>
+                <li><a class="footer-link" href="">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li class="footer-form">
+            <form action="">
+              <p class="footer-menu">
+                knowing you're always on the best energy deal.
+              </p>
+              <input
+                class="footer-input"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name="phone-number"
+                placeholder="Enter your phone number"
+                id="phone"
+              />
+              <button class="footer-sign-up" type="submit">Sign up Now</button>
+            </form>
+          </li>
         </ul>
-        <img src="../img/graphics.png" width="351" height="331" alt="grafics" />
-      </section>
-      <ul>
-        <li>
-          <a href="../index.html"
-            ><img
-              src="../img/logo.svg"
-              width="40"
-              height="36"
-              alt="logo"
-            />Product</a
-          >
-          <ul>
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                ><img src="../img/social-inst.svg" alt="social-instagram"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="http://www.facebook.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                ><img src="../img/social-facebook.svg" alt="social-facebook"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="http://x.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                ><img src="../img/social-x.svg" alt="icon social-x"
-              /></a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <nav>
-            <p id="resources">Resource</p>
-            <ul>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="">FAQ</a></li>
-            </ul>
-          </nav>
-        </li>
-        <li>
-          <nav>
-            <p>Legal Stuff</p>
-            <ul>
-              <li><a href="">Disclaimer</a></li>
-              <li><a href="">Financing</a></li>
-              <li><a href="">Privacy Policy</a></li>
-            </ul>
-          </nav>
-        </li>
-        <li>
-          <form action="">
-            <p>knowing you're always on the best energy deal.</p>
-            <input
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              name="phone-number"
-              placeholder="Enter your phone number"
-              id="phone"
-            />
-            <button type="submit">Sign up Now</button>
-          </form>
-        </li>
-      </ul>
-      <p>Made With Love By Figmaland All Right Reserved</p>
+        <p class="rights">Made With Love By Figmaland All Right Reserved</p>
+      </div>
     </footer>
   </body>
 </html>
