@@ -3,6 +3,7 @@ body {
   color: #22343d;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
+  font-size: 16px;
 }
 ul,
 ol {
@@ -29,24 +30,31 @@ p {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: inherit;
+  color: currentColor;
+}
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
 }
 img {
   display: block;
   max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 .container {
-  margin: 0 auto 100px;
+  margin: 0 auto;
   max-width: 1140px;
-  padding: 0 15px;
+  padding: 25px 15px 50px;
 }
 .header {
   align-items: center;
   display: flex;
   gap: 72px;
   justify-content: space-between;
-  margin: 0 auto 25px;
+  margin: 0 auto;
   max-width: 1140px;
   padding: 0 15px;
 }
@@ -60,12 +68,16 @@ img {
   height: 36px;
   justify-content: space-between;
   line-height: 0.93;
-  margin-right: 237px;
+  margin-right: auto;
   max-width: 178px;
+}
+.navbar .logo{
+  padding: 40px 0;
 }
 .navbar {
   align-items: center;
   display: flex;
+  flex-grow: 1;
 }
 .header-list {
   display: flex;
@@ -74,12 +86,13 @@ img {
 .header-list-item {
   color: #22343d;
   display: block;
-
   line-height: 1.75;
-  padding: 26px 0;
 }
 .header-list li:first-child {
   font-weight: 600;
+}
+.big-link{
+  padding: 26px 0;
 }
 .menu-sign {
   display: flex;
@@ -108,8 +121,9 @@ img {
 .hero .container {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-grow: 1;
+
 }
 .hero h1 {
   display: block;
@@ -230,7 +244,8 @@ img {
 .office-offer-list-item {
   display: flex;
   flex-wrap: wrap;
-  gap: 84px;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 .office-second-list {
   margin-top: 30px;
@@ -243,7 +258,7 @@ img {
   margin-bottom: 0;
 }
 .team .container {
-  padding: 0 112px;
+  /* padding: 0 112px; */
 }
 .team h2 {
   margin-bottom: 25px;
@@ -266,11 +281,11 @@ img {
   text-align: center;
 }
 .team-list {
-  column-gap: 90px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 50px;
+  column-gap: 100px;
   row-gap: 25px;
 }
 .team-list-item {
@@ -279,7 +294,7 @@ img {
   flex-basis: calc((100% - 90px) / 2);
   flex-direction: row-reverse;
   gap: 20px;
-  min-width: 408px;
+  max-width: 408px;
 }
 .team-list-item:first-child,
 .team-list-item:last-child {
